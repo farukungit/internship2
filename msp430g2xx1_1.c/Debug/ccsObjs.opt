@@ -1,3 +1,5 @@
-"./msp430g2xx1_1.obj"
+"./main.obj"
+"./day1/example1.obj"
+"./day2/example1.obj"
 "../lnk_msp430g2231.cmd"
 -llibc.a

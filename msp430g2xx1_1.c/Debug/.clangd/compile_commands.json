@@ -1,12 +1,22 @@
 [
    {
-      "directory" : "C:/Users/ASUS/workspace_ccstheia/msp430g2xx1_1.c/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/ASUS/workspace_ccstheia/msp430g2xx1_1.c\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2231__ -xc",
-      "file"      : "C:/Users/ASUS/workspace_ccstheia/msp430g2xx1_1.c/main.c"
+      "directory" : "C:/Users/zeyne/workspace_ccstheia/msp430g2xx1_1.c/internship2/msp430g2xx1_1.c/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/zeyne/workspace_ccstheia/msp430g2xx1_1.c/internship2/msp430g2xx1_1.c\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2231__ -xc",
+      "file"      : "C:/Users/zeyne/workspace_ccstheia/msp430g2xx1_1.c/internship2/msp430g2xx1_1.c/day1/example1.c"
    },
    {
-      "directory" : "C:/Users/ASUS/workspace_ccstheia/msp430g2xx1_1.c/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/ASUS/workspace_ccstheia/msp430g2xx1_1.c\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2231__ -xc",
-      "file"      : "C:/Users/ASUS/workspace_ccstheia/msp430g2xx1_1.c/day1/example1.c"
+      "directory" : "C:/Users/zeyne/workspace_ccstheia/msp430g2xx1_1.c/internship2/msp430g2xx1_1.c/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/zeyne/workspace_ccstheia/msp430g2xx1_1.c/internship2/msp430g2xx1_1.c\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2231__ -xc",
+      "file"      : "C:/Users/zeyne/workspace_ccstheia/msp430g2xx1_1.c/internship2/msp430g2xx1_1.c/main.c"
+   },
+   {
+      "directory" : "C:/Users/zeyne/workspace_ccstheia/msp430g2xx1_1.c/internship2/msp430g2xx1_1.c/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/zeyne/workspace_ccstheia/msp430g2xx1_1.c/internship2/msp430g2xx1_1.c\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2231__ -xc",
+      "file"      : "C:/Users/zeyne/workspace_ccstheia/msp430g2xx1_1.c/internship2/msp430g2xx1_1.c/day2/example1.c"
+   },
+   {
+      "directory" : "C:/Users/zeyne/workspace_ccstheia/msp430g2xx1_1.c/internship2/msp430g2xx1_1.c/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/zeyne/workspace_ccstheia/msp430g2xx1_1.c/internship2/msp430g2xx1_1.c\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430G2231__ -xc",
+      "file"      : "C:/Users/zeyne/workspace_ccstheia/msp430g2xx1_1.c/internship2/msp430g2xx1_1.c/day2/example2.c"
    }
 ]

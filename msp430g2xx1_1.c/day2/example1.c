@@ -1,7 +1,7 @@
 //binary sayaç 1.0->1.6 
 #include <msp430.h>
 
-int main(void)
+int example1(void)
 {
     WDTCTL = WDTPW | WDTHOLD;   // Watchdog timer kapat
 
