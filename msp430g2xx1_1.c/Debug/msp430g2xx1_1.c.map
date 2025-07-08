@@ -1,10 +1,10 @@
 ******************************************************************************
                   MSP430 Linker PC v21.6.1                     
 ******************************************************************************
->> Linked Tue Jul  8 13:03:13 2025
+>> Linked Tue Jul  8 15:42:53 2025
 
 OUTPUT FILE NAME:   <msp430g2xx1_1.c.out>
-ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 0000f842
+ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 0000f8c8
 
 
 MEMORY CONFIGURATION
@@ -19,7 +19,7 @@ MEMORY CONFIGURATION
   INFOC                 00001040   00000040  00000000  00000040  RWIX
   INFOB                 00001080   00000040  00000000  00000040  RWIX
   INFOA                 000010c0   00000040  00000000  00000040  RWIX
-  FLASH                 0000f800   000007e0  00000068  00000778  RWIX
+  FLASH                 0000f800   000007e0  000000ee  000006f2  RWIX
   INT00                 0000ffe0   00000002  00000000  00000002  RWIX
   INT01                 0000ffe2   00000002  00000000  00000002  RWIX
   INT02                 0000ffe4   00000002  00000002  00000000  RWIX
@@ -47,12 +47,14 @@ section   page    origin      length       input sections
                   0000024c    00000002     rts430_eabi.lib : boot.c.obj (.stack)
                   0000024e    00000032     --HOLE--
 
-.text      0    0000f800    00000068     
-                  0000f800    00000042     main.obj (.text:main)
-                  0000f842    00000014     rts430_eabi.lib : boot.c.obj (.text:_c_int00_noinit_noargs)
-                  0000f856    00000008                     : isr_trap.asm.obj (.text:_isr:__TI_ISR_TRAP)
-                  0000f85e    00000006                     : exit.c.obj (.text:abort)
-                  0000f864    00000004                     : pre_init.c.obj (.text:_system_pre_init)
+.text      0    0000f800    000000ee     
+                  0000f800    0000007e     main.obj (.text:main)
+                  0000f87e    0000002c     rts430_eabi.lib : lsl16.asm.obj (.text)
+                  0000f8aa    0000001e     main.obj (.text:delay1s)
+                  0000f8c8    00000014     rts430_eabi.lib : boot.c.obj (.text:_c_int00_noinit_noargs)
+                  0000f8dc    00000008                     : isr_trap.asm.obj (.text:_isr:__TI_ISR_TRAP)
+                  0000f8e4    00000006                     : exit.c.obj (.text:abort)
+                  0000f8ea    00000004                     : pre_init.c.obj (.text:_system_pre_init)
 
 .cinit     0    0000f800    00000000     
 
@@ -93,11 +95,12 @@ MODULE SUMMARY
        Module             code   ro data   rw data
        ------             ----   -------   -------
     .\
-       main.obj           66     0         0      
+       main.obj           156    0         0      
     +--+------------------+------+---------+---------+
-       Total:             66     0         0      
+       Total:             156    0         0      
                                                   
     C:\ti\ccs2020\ccs\tools\compiler\ti-cgt-msp430_21.6.1.LTS\lib\rts430_eabi.lib
+       lsl16.asm.obj      44     0         0      
        boot.c.obj         20     2         0      
        isr_trap.asm.obj   8      0         0      
        exit.c.obj         6      0         0      
@@ -111,11 +114,11 @@ MODULE SUMMARY
        int10.asm.obj      0      2         0      
        int14.asm.obj      0      2         0      
     +--+------------------+------+---------+---------+
-       Total:             38     18        0      
+       Total:             82     18        0      
                                                   
        Stack:             0      0         52     
     +--+------------------+------+---------+---------+
-       Grand Total:       104    18        52     
+       Grand Total:       238    18        52     
 
 
 GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
@@ -132,7 +135,7 @@ address   name
 00000057  BCSCTL1               
 00000058  BCSCTL2               
 00000053  BCSCTL3               
-0000f85e  C$$EXIT               
+0000f8e4  C$$EXIT               
 000010ff  CALBC1_1MHZ           
 000010fe  CALDCO_1MHZ           
 00000056  DCOCTL                
@@ -179,7 +182,7 @@ address   name
 0000f800  __TI_CINIT_Base       
 0000f800  __TI_CINIT_Limit      
 0000f800  __TI_CINIT_Warm       
-0000f856  __TI_ISR_TRAP         
+0000f8dc  __TI_ISR_TRAP         
 0000ffe4  __TI_int02            
 0000ffe6  __TI_int03            
 0000ffe8  __TI_int04            
@@ -192,11 +195,28 @@ ffffffff  __TI_pprof_out_hndl
 ffffffff  __TI_prof_data_size   
 ffffffff  __TI_prof_data_start  
 ffffffff  __c_args__            
-0000f842  _c_int00_noinit_noargs
+0000f87e  __mspabi_slli         
+0000f8a6  __mspabi_slli_1       
+0000f894  __mspabi_slli_10      
+0000f892  __mspabi_slli_11      
+0000f890  __mspabi_slli_12      
+0000f88e  __mspabi_slli_13      
+0000f88c  __mspabi_slli_14      
+0000f88a  __mspabi_slli_15      
+0000f8a4  __mspabi_slli_2       
+0000f8a2  __mspabi_slli_3       
+0000f8a0  __mspabi_slli_4       
+0000f89e  __mspabi_slli_5       
+0000f89c  __mspabi_slli_6       
+0000f89a  __mspabi_slli_7       
+0000f898  __mspabi_slli_8       
+0000f896  __mspabi_slli_9       
+0000f8c8  _c_int00_noinit_noargs
 0000fffe  _reset_vector         
 0000024c  _stack                
-0000f864  _system_pre_init      
-0000f85e  abort                 
+0000f8ea  _system_pre_init      
+0000f8e4  abort                 
+0000f8aa  delay1s               
 0000f800  main                  
 
 
@@ -262,11 +282,28 @@ address   name
 0000f800  __TI_CINIT_Limit      
 0000f800  __TI_CINIT_Warm       
 0000f800  main                  
-0000f842  _c_int00_noinit_noargs
-0000f856  __TI_ISR_TRAP         
-0000f85e  C$$EXIT               
-0000f85e  abort                 
-0000f864  _system_pre_init      
+0000f87e  __mspabi_slli         
+0000f88a  __mspabi_slli_15      
+0000f88c  __mspabi_slli_14      
+0000f88e  __mspabi_slli_13      
+0000f890  __mspabi_slli_12      
+0000f892  __mspabi_slli_11      
+0000f894  __mspabi_slli_10      
+0000f896  __mspabi_slli_9       
+0000f898  __mspabi_slli_8       
+0000f89a  __mspabi_slli_7       
+0000f89c  __mspabi_slli_6       
+0000f89e  __mspabi_slli_5       
+0000f8a0  __mspabi_slli_4       
+0000f8a2  __mspabi_slli_3       
+0000f8a4  __mspabi_slli_2       
+0000f8a6  __mspabi_slli_1       
+0000f8aa  delay1s               
+0000f8c8  _c_int00_noinit_noargs
+0000f8dc  __TI_ISR_TRAP         
+0000f8e4  C$$EXIT               
+0000f8e4  abort                 
+0000f8ea  _system_pre_init      
 0000ffe4  __TI_int02            
 0000ffe6  __TI_int03            
 0000ffe8  __TI_int04            
@@ -281,4 +318,4 @@ ffffffff  __TI_prof_data_size
 ffffffff  __TI_prof_data_start  
 ffffffff  __c_args__            
 
-[76 symbols]
+[93 symbols]
