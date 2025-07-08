@@ -1,6 +1,14 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "name": "msp430g2xx1_1.c",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "msp430g2xx1_1.c",
+                "resourceId": "/msp430g2xx1_1.c"
+            }
+        }
     ]
 }
