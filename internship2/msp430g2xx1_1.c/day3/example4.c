@@ -1,6 +1,7 @@
+// lede gönderilen sinyalin şiddetini ve süresini kontrol etmek için bir örnek 
 #include <msp430.h>
 
-void main(void)
+void example4(void)
 {
     WDTCTL = WDTPW + WDTHOLD;   // Watchdog Timer kapat
 

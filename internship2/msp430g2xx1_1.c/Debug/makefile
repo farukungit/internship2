@@ -12,7 +12,9 @@ GEN_CMDS__FLAG :=
 ORDERED_OBJS += \
 "./main.obj" \
 "./day1/example1.obj" \
-"./day2/example1.obj" \
+"./day2/example2.obj" \
+"./day2/example3.obj" \
+"./day3/example4.obj" \
 "../lnk_msp430g2231.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibc.a \
@@ -27,9 +29,11 @@ RMDIR := RMDIR /S/Q
 -include subdir_vars.mk
 -include day1/subdir_vars.mk
 -include day2/subdir_vars.mk
+-include day3/subdir_vars.mk
 -include subdir_rules.mk
 -include day1/subdir_rules.mk
 -include day2/subdir_rules.mk
+-include day3/subdir_rules.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -147,8 +151,8 @@ msp430g2xx1_1.c.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "main.obj" "day1\example1.obj" "day2\example1.obj" 
-	-$(RM) "main.d" "day1\example1.d" "day2\example1.d" 
+	-$(RM) "main.obj" "day1\example1.obj" "day2\example2.obj" "day2\example3.obj" "day3\example4.obj" 
+	-$(RM) "main.d" "day1\example1.d" "day2\example2.d" "day2\example3.d" "day3\example4.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
