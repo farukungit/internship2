@@ -6,27 +6,21 @@ SHELL = cmd.exe
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../day2/example1.c \
-../day2/example2.c 
+../day3/example1.c 
 
 C_DEPS += \
-./day2/example1.d \
-./day2/example2.d 
+./day3/example1.d 
 
 OBJS += \
-./day2/example1.obj \
-./day2/example2.obj 
+./day3/example1.obj 
 
 OBJS__QUOTED += \
-"day2\example1.obj" \
-"day2\example2.obj" 
+"day3\example1.obj" 
 
 C_DEPS__QUOTED += \
-"day2\example1.d" \
-"day2\example2.d" 
+"day3\example1.d" 
 
 C_SRCS__QUOTED += \
-"../day2/example1.c" \
-"../day2/example2.c" 
+"../day3/example1.c" 
 
 

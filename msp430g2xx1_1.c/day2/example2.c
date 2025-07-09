@@ -10,7 +10,7 @@ void delay1s()
     __delay_cycles(1000000); // 1 milyon döngü bekle
 }
 
-int main(void)
+int example2(void)
 {
     // Watchdog Timer'ı kapat. Programın istenmeyen yeniden başlatılmasını önler.
     WDTCTL = WDTPW | WDTHOLD;

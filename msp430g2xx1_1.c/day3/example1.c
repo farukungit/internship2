@@ -1,6 +1,6 @@
 #include <msp430.h>
 
-void main(void)
+void example1(void)
 {
     WDTCTL = WDTPW | WDTHOLD;
 
