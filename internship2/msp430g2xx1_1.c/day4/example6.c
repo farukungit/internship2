@@ -11,7 +11,7 @@ void delay_us(unsigned int us) {
     while (us--) __delay_cycles(1); // 1 µs @ 1MHz
 }
 
-void main(void)
+void example6(void)
 {
     WDTCTL = WDTPW | WDTHOLD;
     BCSCTL1 = CALBC1_1MHZ;
