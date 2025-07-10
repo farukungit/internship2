@@ -1,3 +1,6 @@
+// HC-SR04, ultrasonik mesafe sensörü ile bir cisime yakaştıkça led 1.0'ın sönesini sağlayan kod. 
+
+
 #include <msp430.h>
 
 #define TRIG BIT0   // P1.0

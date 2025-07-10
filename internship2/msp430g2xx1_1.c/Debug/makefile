@@ -15,6 +15,7 @@ ORDERED_OBJS += \
 "./day2/example2.obj" \
 "./day2/example3.obj" \
 "./day3/example4.obj" \
+"./day3/example5.obj" \
 "../lnk_msp430g2231.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibc.a \
@@ -151,8 +152,8 @@ msp430g2xx1_1.c.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "main.obj" "day1\example1.obj" "day2\example2.obj" "day2\example3.obj" "day3\example4.obj" 
-	-$(RM) "main.d" "day1\example1.d" "day2\example2.d" "day2\example3.d" "day3\example4.d" 
+	-$(RM) "main.obj" "day1\example1.obj" "day2\example2.obj" "day2\example3.obj" "day3\example4.obj" "day3\example5.obj" 
+	-$(RM) "main.d" "day1\example1.d" "day2\example2.d" "day2\example3.d" "day3\example4.d" "day3\example5.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

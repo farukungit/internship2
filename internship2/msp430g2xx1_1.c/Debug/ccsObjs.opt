@@ -3,5 +3,6 @@
 "./day2/example2.obj"
 "./day2/example3.obj"
 "./day3/example4.obj"
+"./day3/example5.obj"
 "../lnk_msp430g2231.cmd"
 -llibc.a
