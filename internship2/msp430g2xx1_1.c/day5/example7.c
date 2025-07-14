@@ -1,4 +1,8 @@
-#include <msp430.h>
+// sensör ile uzaklığa göre step motorun dönüp sönmesi
+//Mesafe ≤ 10 cm → Motor dönsün (aynı hızda)
+//Mesafe > 10 cm → Motor dursun
+
+include <msp430.h>
 
 #define TRIG BIT4
 #define ECHO BIT5
